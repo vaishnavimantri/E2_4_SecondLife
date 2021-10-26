@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ItemDetailsActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/viewImage"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:src="@drawable/ic_camera"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/selectbutton"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="2dp"
+        android:layout_marginTop="270dp">
+
+        <Button
+            android:id="@+id/btnSelectPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginEnd="100dp"
+            android:backgroundTint="@color/rust2"
+            android:text="Select Photo" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/price"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/selectbutton"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/input"
+        android:hint="Price"
+        android:inputType="number">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/displaycity"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="100dp"
+        android:backgroundTint="@color/rust2"
+        android:onClick="openmap"
+        android:text="Get Location" />
+
+    <TextView
+        android:id="@+id/displaylocation"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/price"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/input"
+        android:gravity="left|center"
+        android:text="Location"
+
+
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/displaycity"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/displaylocation"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/input"
+        android:gravity="left|center"
+        android:text="City"
+        android:textSize="19sp" />
+
+    <Button
+        android:id="@+id/listed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="7dp"
+        android:backgroundTint="@color/rust"
+        android:gravity="center"
+        android:onClick="itemsadded"
+        android:text="list items" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="7dp"
+        android:layout_toEndOf="@+id/listed"
+        android:layout_toRightOf="@+id/listed"
+        android:backgroundTint="@color/rust"
+        android:onClick="gotorecycle"
+        android:text="view items" />
+</RelativeLayout>

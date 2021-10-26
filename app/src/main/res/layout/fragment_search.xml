@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchFragment"
+    >
+
+    <TextView
+        android:id="@+id/texttp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30sp"
+        android:layout_marginTop="157dp"
+        android:layout_marginEnd="30sp"
+        android:fontFamily="@font/farsan"
+        android:text="To view All the listed items click on the button below "
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="85dp"
+        android:text="To add items click on the floating button ->"
+        android:textSize="17sp" />
+
+    <Button
+        android:id="@+id/recylerview"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_below="@+id/texttp"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="140dp"
+        android:text="Go to Items" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity=""
+
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="69dp"
+        android:backgroundTint="@color/rust2"
+        android:contentDescription="submit"
+        android:src="@drawable/ic_add" />
+
+</RelativeLayout>
