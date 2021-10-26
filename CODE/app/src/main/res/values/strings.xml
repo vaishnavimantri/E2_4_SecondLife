@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">SecondLife</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string-array name="Items">
+        <item>Book</item>
+        <item>Car</item>
+        <item>Chair</item>
+        <item>Laptop</item>
+        <item>Mobile</item>
+    </string-array>
+
+    <string-array name="description">
+        <item>This is a random description</item>
+        <item>This is a random description</item>
+        <item>This is a random description</item>
+        <item>This is a random description</item>
+        <item>This is a random description</item>
+    </string-array>
+
+    <string-array name="price">
+        <item>100</item>
+        <item>20000</item>
+        <item>500</item>
+        <item>10000</item>
+        <item>7000</item>
+    </string-array>
+</resources>
